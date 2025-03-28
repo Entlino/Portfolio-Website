@@ -11,7 +11,7 @@
 
 ### 1.1 Ihr Projekt
 
-Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen, diese Website hat den nutzen sie zu einem späteren Zeitpunkt meinen Praktikumsbewerbungen beizulegen. Die Website sollte mir React entwickelt werden.
+Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen, diese Website hat den nutzen sie zu einem späteren Zeitpunkt meinen Praktikumsbewerbungen beizulegen. Die Website sollte mit React entwickelt werden.
 
 ### 1.2 User Stories
 
