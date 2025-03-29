@@ -11,7 +11,7 @@
 
 ### 1.1 Ihr Projekt
 
-Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen, diese Website hat den nutzen sie zu einem späteren Zeitpunkt meinen Praktikumsbewerbungen beizulegen. Die Website sollte mit React entwickelt werden.
+Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen, diese Website hat den nutzen sie zu einem späteren Zeitpunkt meinen Praktikumsbewerbungen beizulegen. 
 
 ### 1.2 User Stories
 
@@ -27,7 +27,7 @@ Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen,
 | 8    | Soll | Inhalt | Als Besucher möchte ich, mehr über die Erfahrungen und die Persöhnlichkeit der Person erfahren. |
 | 9    | Soll | Inhalt | Als Besucher möchte ich Links zu Social-Media-Profilen (LinkedIn, GitHub) haben. |
 | 10   | Kann | Design | Als Besucher möchte ich, dass die Website ein professionelles, modernes und benutzerfreundliches Design hat, das die Kompetenz und Erfahrung der Person wiederspiegelt. |
-| 12   | Kann | Design | Als Besucher möchte ich, dass die Website an den richtigen Stellen sanfte Animationen und Übergänge verwendet, um die Benutzerfreundlichkeit zu verbessern. |
+| 11   | Kann | Design | Als Besucher möchte ich, dass die Website an den richtigen Stellen sanfte Animationen und Übergänge verwendet, um die Benutzerfreundlichkeit zu verbessern. |
 | 12   | Kann | Barrierefreiheit | Als Besucher mit Einschränkungen (z.B. Sehbehinderung, motorische Einschränkung) möchte ich die Website problemlos nutzen können. Die Website soll die Richtlinien für Barrierefreiheit (WCAG 2.2) erfüllen. |
 
 
@@ -61,14 +61,28 @@ Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen,
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| 1.A  | 29.03.2025 | Christian | Registrierung der Domain | 15min |
+| 1.B  | 29.03.2025 | Christian | Grundstruktur der Website erstellen | 45min |
+| 2.A  | 29.03.2025 | Christian | Kontaktsektion mit E-Mail-Adresse und Kontaktformular erstellen | 45min |
+| 2.B  | 29.03.2025 | Christian | Validierung und Styling des Kontaktformulars umsetzen | 45min |
+| 3.A  | 29.03.2025 | Christian | Navigationsleiste mit Ankerlinks für die Single-Page-Struktur erstellen | 45min |
+| 3.B  | 29.03.2025 | Christian | Navigation testen und optimieren (Usability, Mobilfreundlichkeit) | 45min |
+| 4.A  | 30.03.2025 | Christian | Mehrsprachigkeit vorbereiten (Toggle für Sprachumschaltung einrichten) | 45min|
+| 4.B  | 30.03.2025 | Christian | Inhalte übersetzen | 45min |
+| 5.A  | 30.03.2025 | Christian | Responsives Design umsetzen | 45min |
+| 5.B  | 30.03.2025 | Christian | Kompatibilität mit verschiedenen Browsern und Geräten testen | 45min |
+| 6.A  | 04.04.2025 | Christian | Sektion "Fähigkeiten & Kenntnisse" designen und Inhalte einfügen | 45min |
+| 7.A  | 04.04.2025 | Christian | Projektübersicht erstellen | 45min |
+| 7.B  | 04.04.2025 | Christian | Projektbeschreibungen und verwendete Technologien einfügen | 45min |
+| 8.A  | 04.04.2025 | Christian | Sektion "Über mich" hinzufügen | 45min |
+| 9.A  | 04.04.2025 | Christian | Icons und Links zu Social-Media-Profilen einfügen | 45min |
+| 10.A | 05.04.2025 | Christian | Grundlegendes Design-Konzept (Farben, Schriften) umsetzten | 45min |
+| 11.A | 05.04.2025 | Christian | Sanfte Animationen für Übergänge und Interaktionen hinzufügen | 45min |
+| 12.A | 05.04.2025 | Christian | Accessibility-Anpassungen gemäß WCAG 2.2 umsetzen | 45min |
 
-Total: 
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
+Total: 18 Arbeitspakete
 
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
 
 ## 3 Entscheiden
 
