@@ -86,13 +86,15 @@ Total: 18 Arbeitspakete
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Ich habe mich dazu entschieden die Website ohne React zu erstellen da dies eine deutlich längere Einarbeitungszeit beansprucht hätte als angenommen.
+Zudem habe ich mich dazu entschieden die Website eher in einem dunkleren Design zu erstellen da dies mich persöhnlich am besten anspricht.
+
 
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
+| 1.A  | 29.04.2025 | Christian | 15min | 15min |
 | ...  |       |           |               |                   |
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
