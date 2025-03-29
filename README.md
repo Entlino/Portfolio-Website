@@ -3,7 +3,7 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|28.03.2025| 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
+|28.03.2025| 0.0.1   | Erfassen der User Stories sowie den dazugehörigen Testfälle. |
 |       | ...     |                                                              |
 |       | 1.0.0   |                                                              |
 
@@ -25,7 +25,7 @@ Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen,
 | 6    | Soll | Inhalt | Als Besucher möchte ich, einen visuellen Überblick über die Fähigkeiten und Kenntnisse der Person bekommen. |
 | 7    | Soll | Inhalt | Als Besucher möchte ich eine Auswahl von Projekten sehen, an denen die Person gearbeitet hat, mit Beschreibungen, Bildern/Videos und Informationen zu den verwendeten Technologien. |
 | 8    | Soll | Inhalt | Als Besucher möchte ich, mehr über die Erfahrungen und die Persöhnlichkeit der Person erfahren. |
-| 9   | Soll | Inhalt | Als Besucher möchte ich Links zu Social-Media-Profilen (LinkedIn, GitHub) haben. |
+| 9    | Soll | Inhalt | Als Besucher möchte ich Links zu Social-Media-Profilen (LinkedIn, GitHub) haben. |
 | 10   | Kann | Design | Als Besucher möchte ich, dass die Website ein professionelles, modernes und benutzerfreundliches Design hat, das die Kompetenz und Erfahrung der Person wiederspiegelt. |
 | 12   | Kann | Design | Als Besucher möchte ich, dass die Website an den richtigen Stellen sanfte Animationen und Übergänge verwendet, um die Benutzerfreundlichkeit zu verbessern. |
 | 12   | Kann | Barrierefreiheit | Als Besucher mit Einschränkungen (z.B. Sehbehinderung, motorische Einschränkung) möchte ich die Website problemlos nutzen können. Die Website soll die Richtlinien für Barrierefreiheit (WCAG 2.2) erfüllen. |
