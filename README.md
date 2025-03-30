@@ -61,24 +61,24 @@ Mein Projekt besteht darin eine Portfolio Website für mich selber zu erstellen,
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  | 29.03.2025 | Christian | Registrierung der Domain | 15min |
-| 1.B  | 29.03.2025 | Christian | Grundstruktur der Website erstellen | 45min |
-| 2.A  | 29.03.2025 | Christian | Kontaktsektion mit E-Mail-Adresse und Kontaktformular erstellen | 45min |
-| 2.B  | 29.03.2025 | Christian | Validierung und Styling des Kontaktformulars umsetzen | 45min |
-| 3.A  | 29.03.2025 | Christian | Navigationsleiste mit Ankerlinks für die Single-Page-Struktur erstellen | 45min |
-| 3.B  | 29.03.2025 | Christian | Navigation testen und optimieren (Usability, Mobilfreundlichkeit) | 45min |
-| 4.A  | 30.03.2025 | Christian | Mehrsprachigkeit vorbereiten (Toggle für Sprachumschaltung einrichten) | 45min|
-| 4.B  | 30.03.2025 | Christian | Inhalte übersetzen | 45min |
-| 5.A  | 30.03.2025 | Christian | Responsives Design umsetzen | 45min |
-| 5.B  | 30.03.2025 | Christian | Kompatibilität mit verschiedenen Browsern und Geräten testen | 45min |
-| 6.A  | 04.04.2025 | Christian | Sektion "Fähigkeiten & Kenntnisse" designen und Inhalte einfügen | 45min |
-| 7.A  | 04.04.2025 | Christian | Projektübersicht erstellen | 45min |
-| 7.B  | 04.04.2025 | Christian | Projektbeschreibungen und verwendete Technologien einfügen | 45min |
-| 8.A  | 04.04.2025 | Christian | Sektion "Über mich" hinzufügen | 45min |
-| 9.A  | 04.04.2025 | Christian | Icons und Links zu Social-Media-Profilen einfügen | 45min |
-| 10.A | 05.04.2025 | Christian | Grundlegendes Design-Konzept (Farben, Schriften) umsetzten | 45min |
-| 11.A | 05.04.2025 | Christian | Sanfte Animationen für Übergänge und Interaktionen hinzufügen | 45min |
-| 12.A | 05.04.2025 | Christian | Accessibility-Anpassungen gemäß WCAG 2.2 umsetzen | 45min |
+| 1.A  |  | Christian | Registrierung der Domain | 15min |
+| 1.B  |  | Christian | Grundstruktur der Website erstellen | 45min |
+| 2.A  |  | Christian | Kontaktsektion mit E-Mail-Adresse und Kontaktformular erstellen | 45min |
+| 2.B  |  | Christian | Validierung und Styling des Kontaktformulars umsetzen | 45min |
+| 3.A  |  | Christian | Navigationsleiste mit Ankerlinks für die Single-Page-Struktur erstellen | 45min |
+| 3.B  |  | Christian | Navigation testen und optimieren (Usability, Mobilfreundlichkeit) | 45min |
+| 4.A  |  | Christian | Mehrsprachigkeit vorbereiten (Toggle für Sprachumschaltung einrichten) | 45min|
+| 4.B  |  |Christian | Inhalte übersetzen | 45min |
+| 5.A  |  | Christian | Responsives Design umsetzen | 45min |
+| 5.B  |  | Christian | Kompatibilität mit verschiedenen Browsern und Geräten testen | 45min |
+| 6.A  |  | Christian | Sektion "Fähigkeiten & Kenntnisse" designen und Inhalte einfügen | 45min |
+| 7.A  |  | Christian | Projektübersicht erstellen | 45min |
+| 7.B  |  | Christian | Projektbeschreibungen und verwendete Technologien einfügen | 45min |
+| 8.A  |  | Christian | Sektion "Über mich" hinzufügen | 45min |
+| 9.A  |  | Christian | Icons und Links zu Social-Media-Profilen einfügen | 45min |
+| 10.A |  | Christian | Grundlegendes Design-Konzept (Farben, Schriften) umsetzten | 45min |
+| 11.A |  | Christian | Sanfte Animationen für Übergänge und Interaktionen hinzufügen | 45min |
+| 12.A |  | Christian | Accessibility-Anpassungen gemäß WCAG 2.2 umsetzen | 45min |
 
 
 Total: 18 Arbeitspakete
