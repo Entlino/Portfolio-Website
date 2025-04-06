@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Aeschlimann</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">Christian Aeschlimann</div>
+        <nav class="main-nav">
+          <a href="#about">Über mich</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Mein Weg</a>
+          <a href="#projects">Projekte</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-background-element"></div>
+
+        <div class="container hero-content-container">
+          <div class="hero-text">
+            <span class="hero-greeting">Hallo, Ich bin</span>
+            <h1 class="hero-name">Christian Aeschlimann</h1>
+            <p class="hero-role">Fullstack Developer</p>
+            <p class="hero-subtitle">
+              Ich arbeite gerne an interessanten Projekten, die mich
+              herausfordern.
+            </p>
+            <a href="#projects" class="cta-button">Meine Projekte</a>
+          </div>
+          <a href="#about" class="scroll-down-hint" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <div>
+              <p>
+                Hallo, ich bin Christian, aktuell Schüler der
+                Informatikmittelschule an der Alten Kantonschule Aarau sowie der
+                Berufsbildung Baden.
+              </p>
+              <p>
+                Mit Grundlegenden Kenntnisse in Front- sowie Backend
+                Entwicklungen versuche ich jede Herausforderung zu meistern.
+              </p>
+              <p>
+                Ich versuche meine Arbeit stets sturkturiert und sauber zu
+                planen und umzusetzten.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="content-section alt-bg">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card glass-effect">
+              <i class="fas fa-code skill-icon"></i>
+              <h3>Frontend</h3>
+              <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+            </div>
+            <div class="skill-card glass-effect">
+              <i class="fas fa-server skill-icon"></i>
+              <h3>Backend</h3>
+              <p>ASP.NET, Python, REST APIs,</p>
+            </div>
+            <div class="skill-card glass-effect">
+              <i class="fas fa-database skill-icon"></i>
+              <h3>Databases</h3>
+              <p>SQL, NoSQL</p>
+            </div>
+            <div class="skill-card glass-effect">
+              <i class="fas fa-tools skill-icon"></i>
+              <h3>Tools & DevOps</h3>
+              <p>Git, Docker, AWS, CI/CD, Testing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="container">
+          <h2>Mein Weg</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-effect">
+                <h3>Primarschule</h3>
+                <span class="timeline-date">2013 - 2019</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-effect">
+                <h3>Bezirksschule</h3>
+                <span class="timeline-date">2019 - 2022</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-effect">
+                <h3>Informatikmittelschule</h3>
+                <span class="timeline-date">2022 - 2023</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-effect">
+                <h3>Informatikmittelschule Repetition</h3>
+                <span class="timeline-date">2023 - Present </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section alt-bg">
+        <div class="container">
+          <h2>Meine Projekte</h2>
+          <div class="projects-grid">
+            <article class="project-card glass-effect">
+              <img
+                src="Finanz Verwalter.png"
+                alt="Finanz Verwalter Screenshot"
+                class="project-image"
+              />
+              <div class="project-info">
+                <h3>Portfolio Verwalter</h3>
+                <p>
+                  Ich habe ein kleines Finanztool mit Python gebaut welches über
+                  eine Bibliothek aktuelle Finanzkurse abfragen kann, diese in
+                  Diagrammen sowie Zahlen darstellen kann. Man kann sein eigenes
+                  Portfolio erstellen und verwalten. Das Programm ermöglicht es
+                  ebenfalls die selben Titeln zu verschiedenen Preisen zu
+                  kaufen. Die Titel im Portfolio werden lokal in einer Datenbank
+                  gespeichert.
+                </p>
+                <p class="tech-stack">
+                  <strong>Tech:</strong> Python, Matplotlib, Pandas, Tkinter,
+                  yFinance
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Entlino/Lern-Periode-8"
+                    target="_blank"
+                    class="project-link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-effect">
+              <img
+                src="Sonnensystem.png"
+                alt="Sonnensystem Screenshot"
+                class="project-image"
+              />
+              <div class="project-info">
+                <h3>Sonnensystem Website</h3>
+                <p>
+                  In meiner Sonnensystem Website habe ich mit HTML, CSS und
+                  JavaScript, ein Sonnensystem gebaut, in welchem die
+                  verschiedenen Planeten nach ihrer grösse Dargestellt werden
+                  und mit einer Grafik der Planeten dargestellt werden. Um ein
+                  bisschen Bewegung im Hintergrund zu erstellen habe ich
+                  Sternschnuppen und UFO's hinzugefügt welche in vorgegeben
+                  Abständen auftreten können.
+                </p>
+                <p class="tech-stack">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Entlino/Lern-Periode-7"
+                    target="_blank"
+                    class="project-link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-effect">
+              <img
+                src="Spracherkennung.png"
+                alt="Spracherkennung Screenshot"
+                class="project-image"
+              />
+              <div class="project-info">
+                <h3>Spracherkennung</h3>
+                <p>
+                  In diesem Projekt habe ich mit C# eine
+                  Spracherkennungsprogramm erstellt, dieses Programm kann
+                  eingegebene Texte analysieren und aufgrund der Buchstaben
+                  kombinationen im Text die Sprache herausfinden.
+                </p>
+                <p class="tech-stack"><strong>Tech:</strong> C#</p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Entlino/Lern-Periode-5"
+                    target="_blank"
+                    class="project-link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section">
+        <div class="container contact-container">
+          <h2>Kontakt aufnehmen</h2>
+          <p>
+            Falls Sie Fragen haben oder mehr über meine Arbeit erfahren möchten,
+            zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:your.email@example.com" class="cta-button"
+              ><i class="fas fa-envelope"></i> Email</a
+            >
+            <a
+              href="https://www.linkedin.com/in/christian-aeschlimann-854300255/"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Entlino"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 Christian Aeschlimann. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
