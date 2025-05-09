@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt: Sonnensystem Website - Christian Aeschlimann</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      /* Stile für Projekt-Detailseiten, um Ähnlichkeit zu index.html zu erhöhen */
+      .project-hero {
+        padding: 60px 0;
+        text-align: center;
+        background-color: var(--alt-bg-color);
+      }
+      .project-hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        margin-bottom: 0.3em;
+        color: var(--heading-color);
+      }
+      .project-hero .subtitle {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+      .project-main-image img {
+        max-width: 80%;
+        margin: 30px auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .project-detail-section {
+        padding: var(--section-padding-y) 0;
+      }
+      .project-detail-section.alt-bg {
+        background-color: var(--alt-bg-color);
+      }
+      .project-detail-section h2 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.5em;
+        position: relative;
+      }
+      .project-detail-section h2::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: var(--accent-color);
+        margin: 0.4em auto 0;
+      }
+      .project-detail-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--grid-gap);
+        margin-top: 30px;
+      }
+      .feature-card {
+        text-align: center;
+        padding: 25px;
+      }
+      .feature-icon {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+      }
+      .feature-card h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .tech-list li {
+        display: inline-block;
+        background-color: rgba(0, 123, 255, 0.1);
+        color: var(--accent-color-darker);
+        padding: 6px 12px;
+        margin: 5px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .project-links-section {
+        text-align: center;
+        padding: 40px 0;
+      }
+      .back-link-section {
+        padding: 30px 0;
+        text-align: center;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 15px;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+        color: var(--accent-color-darker);
+      }
+      .back-link i {
+        margin-right: 8px;
+      }
+      /* Spezifisch für Sonnensystem vielleicht nötig? */
+      .planet-image {
+        max-width: 150px; /* Kleinere Bilder für Planetenübersicht */
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="../index.html" class="logo">Christian Aeschlimann</a>
+        <nav class="main-nav">
+          <a href="../index.html#about">Über mich</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#experience">Mein Weg</a>
+          <a href="../index.html#projects">Projekte</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <h1>Sonnensystem Website</h1>
+          <p class="subtitle">
+            Eine interaktive Darstellung unseres Sonnensystems mit HTML, CSS und
+            JavaScript.
+          </p>
+          <div class="project-main-image">
+            <img
+              src="../Sonnensystem.png"
+              alt="Ansicht der Sonnensystem Website"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Das Projekt im Detail</h2>
+          <div style="max-width: 750px; margin: 0 auto; text-align: center">
+            <p>
+              Fasziniert von der Astronomie und den Möglichkeiten moderner
+              Webtechnologien, wollte ich eine visuell ansprechende und
+              informative Webseite über unser Sonnensystem erstellen. Ziel war
+              es, die Planeten nicht nur aufzulisten, sondern sie auch in
+              Relation zueinander darzustellen und die Seite mit dynamischen
+              Elementen lebendiger zu gestalten.
+            </p>
+            <p>
+              Die Seite sollte sowohl lehrreich als auch unterhaltsam sein und
+              grundlegende Informationen zu jedem Planeten sowie deren grafische
+              Repräsentation bieten.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Verwendete Technologien</h2>
+          <div style="text-align: center">
+            <ul class="tech-list">
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js-square"></i> JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Kernfunktionen</h2>
+          <div class="project-detail-grid">
+            <div class="feature-card glass-effect">
+              <i class="fas fa-globe-europe feature-icon"></i>
+              <h4>Planeten Darstellung</h4>
+              <p>
+                Visuelle Repräsentation der Planeten mit Grafiken und relativer
+                Grössendarstellung.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-info-circle feature-icon"></i>
+              <h4>Informationen</h4>
+              <p>
+                Bereitstellung grundlegender Fakten und Daten zu jedem Planeten
+                (z.B. Grösse, Entfernung).
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-meteor feature-icon"></i>
+              <h4>Dynamischer Hintergrund</h4>
+              <p>
+                Animationen wie Sternschnuppen und UFOs zur Belebung der Szene.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-ruler-combined feature-icon"></i>
+              <h4>Relative Grössen</h4>
+              <p>
+                Die Grösse der dargestellten Planeten spiegelt ihre
+                tatsächlichen Grössenverhältnisse wider.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-mouse-pointer feature-icon"></i>
+              <h4>Interaktivität (Potenzial)</h4>
+              <p>
+                (Optional: Falls vorhanden) Interaktive Elemente wie
+                Hover-Effekte oder Klick-Infos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Herausforderungen & Lernen</h2>
+          <div style="max-width: 750px; margin: 0 auto">
+            <p>
+              Die grösste Herausforderung bestand darin, die relativen Grössen
+              und Abstände der Planeten sinnvoll auf einer Webseite
+              darzustellen, ohne die Übersichtlichkeit zu verlieren. Ein
+              maßstabsgetreues Modell ist im Web kaum praktikabel, daher musste
+              ein Kompromiss zwischen visueller Darstellung und korrekten
+              Proportionen gefunden werden.
+            </p>
+            <p>
+              Die Implementierung der Hintergrundanimationen mit reinem CSS und
+              JavaScript, sodass sie natürlich wirken und nicht von den
+              Hauptinhalten ablenken, erforderte präzises Timing und einige
+              Experimente mit Animationstechniken.
+            </p>
+            <p>
+              Dieses Projekt war eine hervorragende Übung in
+              HTML-Strukturierung, CSS-Layout (insbesondere Positionierung und
+              visuelle Effekte) und grundlegender JavaScript-DOM-Manipulation
+              für die Animationen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-links-section">
+        <div class="container">
+          <h2>Code ansehen</h2>
+          <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
+          <a
+            href="https://github.com/Entlino/Lern-Periode-7"
+            target="_blank"
+            class="cta-button"
+            ><i class="fab fa-github"></i> GitHub Repository</a
+          >
+        </div>
+      </section>
+
+      <section class="back-link-section">
+        <div class="container">
+          <a href="../index.html#projects" class="back-link"
+            ><i class="fas fa-arrow-left"></i> Zurück zur Projektübersicht</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>
+          © <span id="current-year"></span> Christian Aeschlimann. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      // Dynamisches Jahr im Footer
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
