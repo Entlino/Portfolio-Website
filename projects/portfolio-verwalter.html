@@ -15,115 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <style>
-      /* Stile für Projekt-Detailseiten, um Ähnlichkeit zu index.html zu erhöhen */
-      .project-hero {
-        padding: 60px 0; /* Mehr Padding wie bei anderen Sektionen */
-        text-align: center;
-        background-color: var(--alt-bg-color); /* Ähnlich wie Hero auf index */
-      }
-      .project-hero h1 {
-        font-size: clamp(2.5rem, 6vw, 4rem); /* Grössere Überschrift */
-        margin-bottom: 0.3em;
-        color: var(--heading-color);
-      }
-      .project-hero .subtitle {
-        font-size: 1.2rem;
-        color: var(--text-color);
-        max-width: 600px;
-        margin: 0 auto 30px;
-      }
-      /* Haupt-Screenshot prominenter */
-      .project-main-image img {
-        max-width: 80%; /* Nicht volle Breite, wirkt oft besser */
-        margin: 30px auto; /* Zentriert, mit Abstand */
-        display: block;
-        border-radius: 8px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-      .project-detail-section {
-        padding: var(--section-padding-y) 0; /* Gleiches Padding wie Hauptsektionen */
-      }
-      .project-detail-section.alt-bg {
-        background-color: var(--alt-bg-color); /* Alternierender Hintergrund */
-      }
-      .project-detail-section h2 {
-        /* Abschnittsüberschriften wie auf index.html */
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 1.5em;
-        position: relative;
-      }
-      .project-detail-section h2::after {
-        /* Unterstrich für H2 */
-        content: "";
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: var(--accent-color);
-        margin: 0.4em auto 0;
-      }
-      .project-detail-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: var(--grid-gap);
-        margin-top: 30px;
-      }
-      .feature-card {
-        /* Ähnlich wie Skill-Cards */
-        text-align: center;
-        padding: 25px;
-      }
-      .feature-icon {
-        font-size: 2.5rem;
-        color: var(--accent-color);
-        margin-bottom: 15px;
-      }
-      .feature-card h4 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-      .tech-list li {
-        display: inline-block;
-        background-color: rgba(
-          0,
-          123,
-          255,
-          0.1
-        ); /* Heller Akzent-Hintergrund */
-        color: var(--accent-color-darker);
-        padding: 6px 12px;
-        margin: 5px;
-        border-radius: 15px; /* Abgerundeter */
-        font-size: 0.9rem;
-        font-weight: 500; /* Etwas dicker */
-      }
-      .project-links-section {
-        text-align: center;
-        padding: 40px 0;
-      }
-      .back-link-section {
-        padding: 30px 0;
-        text-align: center;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 15px; /* Weniger Abstand nach oben */
-        color: var(--accent-color);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem; /* Etwas grösser */
-      }
-      .back-link:hover {
-        text-decoration: underline;
-        color: var(--accent-color-darker);
-      }
-      .back-link i {
-        margin-right: 8px;
-      }
-    </style>
   </head>
   <body>
     <header class="main-header">
@@ -162,18 +53,18 @@
           <h2>Das Projekt im Detail</h2>
           <div style="max-width: 750px; margin: 0 auto; text-align: center">
             <p>
-              Dieses Projekt entstand aus dem persönlichen Bedürfnis heraus,
-              eine einfache Möglichkeit zu haben, meine Aktienkäufe zu verfolgen
-              und deren Wertentwicklung übersichtlich darzustellen. Bestehende
-              Online-Broker boten mir nicht immer die gewünschte Flexibilität
-              oder Übersicht, insbesondere bei Käufen desselben Titels zu
-              unterschiedlichen Zeitpunkten.
+              Ich interessiere mich sehr für Finanzen und wollte das in einem
+              kleinen Python-Projekt umsetzen. Da ich noch nicht so viel
+              Erfahrung mit Python hatte, war die Idee, mit aktuellen
+              Finanzdaten zu arbeiten, die ich mit yFinance bekommen kann, und
+              diese dann mit einfachen Mitteln in Pandas verarbeite und dann
+              mithilfe von Diagrammen aus MatPlotlib darzustellen. Für die
+              Ansicht habe ich eine einfache grafische Oberfläche mit Tkinter
+              gebaut.
             </p>
             <p>
-              Das Kernziel war daher die Entwicklung einer eigenständigen
-              Desktop-Anwendung, die genau diese Lücke schliesst: Einfache
-              Dateneingabe, automatische Kursaktualisierung und klare
-              Visualisierungen.
+              Aktuell arbeite ich gerade daran das Projekt mit C# mit welchem
+              ich deutlich mehr Erfahrung habe, neu zu erstellen.
             </p>
           </div>
         </div>
@@ -200,14 +91,6 @@
           <h2>Kernfunktionen</h2>
           <div class="project-detail-grid">
             <div class="feature-card glass-effect">
-              <i class="fas fa-plus-circle feature-icon"></i>
-              <h4>Einfache Dateneingabe</h4>
-              <p>
-                Erfassen von Käufen (Ticker, Anzahl, Preis, Datum) über eine
-                intuitive Oberfläche.
-              </p>
-            </div>
-            <div class="feature-card glass-effect">
               <i class="fas fa-sync-alt feature-icon"></i>
               <h4>Live Kursdaten</h4>
               <p>
@@ -232,14 +115,6 @@
               </p>
             </div>
             <div class="feature-card glass-effect">
-              <i class="fas fa-save feature-icon"></i>
-              <h4>Lokale Speicherung</h4>
-              <p>
-                Alle Portfoliodaten werden sicher in einer lokalen
-                SQLite-Datenbank gespeichert.
-              </p>
-            </div>
-            <div class="feature-card glass-effect">
               <i class="fas fa-layer-group feature-icon"></i>
               <h4>Mehrfachkäufe</h4>
               <p>
@@ -258,8 +133,7 @@
             <p>
               Eine der grössten Herausforderungen war das zuverlässige Handling
               der Daten von yFinance. Manchmal sind Daten unvollständig oder die
-              API reagiert nicht wie erwartet. Hier musste eine robuste
-              Fehlerbehandlung implementiert werden.
+              API reagiert nicht wie erwartet. Was zu Problemen führen kann.
             </p>
             <p>
               Die Integration von Matplotlib-Diagrammen in eine Tkinter-GUI war
@@ -282,7 +156,7 @@
           <h2>Code ansehen</h2>
           <p>Der vollständige Quellcode ist auf GitHub verfügbar.</p>
           <a
-            href="https://github.com/Entlino/Lern-Periode-8"
+            href="https://github.com/Entlino/Portfolio-Verwalter"
             target="_blank"
             class="cta-button"
             ><i class="fab fa-github"></i> GitHub Repository</a
@@ -301,18 +175,10 @@
 
     <footer class="main-footer">
       <div class="container">
-        <p>
-          © <span id="current-year"></span> Christian Aeschlimann. All rights
-          reserved.
-        </p>
+        <p>© 2025 Christian Aeschlimann. All rights reserved.</p>
       </div>
     </footer>
 
-    <script src="../script.js"></script>
-    <script>
-      // Dynamisches Jahr im Footer
-      document.getElementById("current-year").textContent =
-        new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

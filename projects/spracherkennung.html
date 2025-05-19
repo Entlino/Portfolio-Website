@@ -15,109 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <style>
-      /* Stile für Projekt-Detailseiten, um Ähnlichkeit zu index.html zu erhöhen */
-      .project-hero {
-        padding: 60px 0;
-        text-align: center;
-        background-color: var(--alt-bg-color);
-      }
-      .project-hero h1 {
-        font-size: clamp(2.5rem, 6vw, 4rem);
-        margin-bottom: 0.3em;
-        color: var(--heading-color);
-      }
-      .project-hero .subtitle {
-        font-size: 1.2rem;
-        color: var(--text-color);
-        max-width: 600px;
-        margin: 0 auto 30px;
-      }
-      .project-main-image img {
-        max-width: 80%;
-        margin: 30px auto;
-        display: block;
-        border-radius: 8px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-      .project-detail-section {
-        padding: var(--section-padding-y) 0;
-      }
-      .project-detail-section.alt-bg {
-        background-color: var(--alt-bg-color);
-      }
-      .project-detail-section h2 {
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 1.5em;
-        position: relative;
-      }
-      .project-detail-section h2::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 3px;
-        background-color: var(--accent-color);
-        margin: 0.4em auto 0;
-      }
-      .project-detail-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: var(--grid-gap);
-        margin: 25px;
-      }
-
-      .project-detail-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        margin: 25px;
-      }
-      .feature-icon {
-        font-size: 2.5rem;
-        color: var(--accent-color);
-        margin-bottom: 15px;
-      }
-      .feature-card h4 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-      .tech-list li {
-        display: inline-block;
-        background-color: rgba(0, 123, 255, 0.1);
-        color: var(--accent-color-darker);
-        padding: 6px 12px;
-        margin: 5px;
-        border-radius: 15px;
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-      .project-links-section {
-        text-align: center;
-        padding: 40px 0;
-      }
-      .back-link-section {
-        padding: 30px 0;
-        text-align: center;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 15px;
-        color: var(--accent-color);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-      }
-      .back-link:hover {
-        text-decoration: underline;
-        color: var(--accent-color-darker);
-      }
-      .back-link i {
-        margin-right: 8px;
-      }
-    </style>
   </head>
   <body>
     <header class="main-header">
@@ -156,17 +53,16 @@
           <h2>Das Projekt im Detail</h2>
           <div style="max-width: 750px; margin: 0 auto; text-align: center">
             <p>
-              Die Aufgabe dieses Projekts war es, die Grundlagen der Textanalyse
-              und algorithmischen Spracherkennung zu erforschen. Ziel war die
-              Entwicklung eines Programms, das einen eingegebenen Text
-              analysiert und anhand der Häufigkeit charakteristischer
-              Buchstabenkombinationen (wie Bigramme oder Trigramme) versucht,
-              die Sprache des Textes zu identifizieren.
+              Dieses Programm versucht basierend auf der Häufigkeit von
+              Buchstabenkombinationen die Sprache des eingegebenen Textes zu
+              analysieren.
             </p>
             <p>
-              Es sollte eine Konsolenanwendung oder eine einfache grafische
-              Oberfläche erstellt werden, die es dem Benutzer ermöglicht, Text
-              einzufügen und das Ergebnis der Spracherkennung zu sehen.
+              Es gibt einen Training- und einen Testmodus. Im Training-Modus
+              kann man die Häufigkeiten optimieren in dem man einen Text in
+              vorgegebener Sprache eingibt. Im Testmodus hingegeben wird
+              basierend auf den Häufigkeiten die eingegebene Texte analysiert
+              und die wahrscheinlichste Sprache ausgegeben.
             </p>
           </div>
         </div>
@@ -178,9 +74,7 @@
           <div style="text-align: center">
             <ul class="tech-list">
               <li><i class="fas fa-code"></i> C#</li>
-              <li>
-                <i class="fab fa-windows"></i> .NET Framework (oder .NET Core)
-              </li>
+              <li><i class="fab fa-windows"></i> .NET Framework</li>
             </ul>
           </div>
         </div>
@@ -231,28 +125,14 @@
           <h2>Herausforderungen & Lernen</h2>
           <div style="max-width: 750px; margin: 0 auto">
             <p>
-              Die grösste Herausforderung war die Entwicklung eines effektiven
-              Algorithmus zur Spracherkennung. Die einfache Buchstabenhäufigkeit
-              reicht oft nicht aus, daher musste mit N-Grammen (Bigramme,
-              Trigramme) experimentiert werden, um charakteristischere Merkmale
-              zu finden.
+              Das schwerste war es das das Programm basierend auf den Zahlen
+              entscheidet ob es jetzt Deutsch oder Englisch ist, also die
+              Auswertung.
             </p>
             <p>
-              Eine weitere Hürde war das Sammeln und Erstellen von Referenzdaten
-              (Sprachprofilen) für verschiedene Sprachen. Die Qualität dieser
-              Referenzdaten beeinflusst massgeblich die Genauigkeit der
-              Erkennung.
-            </p>
-            <p>
-              Die Textvorverarbeitung, wie das Entfernen von Satzzeichen,
-              Umwandlung in Kleinbuchstaben und das Handling von Sonderzeichen,
-              war ebenfalls ein wichtiger Schritt, um die Analyseergebnisse
-              nicht zu verfälschen.
-            </p>
-            <p>
-              Dieses Projekt bot eine gute Einführung in die Konzepte der
-              Textanalyse, der statistischen Methoden und der algorithmischen
-              Problemlösung mit C#.
+              Das Programm sollte jedoch in Zukunft nochmals neu erstellt werden
+              und dann basieren auf einem Machine Learning Modell die Sprache
+              erkennen.
             </p>
           </div>
         </div>
@@ -263,7 +143,7 @@
           <h2>Code ansehen</h2>
           <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
           <a
-            href="https://github.com/Entlino/Lern-Periode-5"
+            href="https://github.com/Entlino/Spracherkennung"
             target="_blank"
             class="cta-button"
             ><i class="fab fa-github"></i> GitHub Repository</a
@@ -282,18 +162,10 @@
 
     <footer class="main-footer">
       <div class="container">
-        <p>
-          © <span id="current-year"></span> Christian Aeschlimann. All rights
-          reserved.
-        </p>
+        <p>© 2025 Christian Aeschlimann. All rights reserved.</p>
       </div>
     </footer>
 
-    <script src="../script.js"></script>
-    <script>
-      // Dynamisches Jahr im Footer
-      document.getElementById("current-year").textContent =
-        new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
