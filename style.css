@@ -17,8 +17,8 @@
 
   --container-width: 1100px;
   --header-height: 70px;
-  --section-padding-y: 90px; /* Increased section 
-   --grid-gap: 30px; /* Increased grid gap slightly */
+  --section-padding-y: 90px;
+  --grid-gap: 30px;
 }
 
 /* --- Reset & Base Styles --- */
@@ -49,6 +49,7 @@ body {
   margin: 0 auto;
 }
 
+/* --- Typography --- */
 h1,
 h2,
 h3 {
@@ -180,7 +181,7 @@ main {
   background-color: var(--alt-bg-color);
 }
 
-/* --- Glass Effect --- */
+/* --- Glass Effect (General Card Style) --- */
 .glass-effect {
   background: var(--card-bg);
   backdrop-filter: blur(var(--glass-blur));
@@ -203,64 +204,66 @@ main {
   ); /* Slightly more opaque on hover */
 }
 
-/* --- Hero Section --- */
-.hero-section {
-  /* padding: 80px 0; Remove fixed padding */
-  text-align: center;
-  min-height: 100vh; /* Make hero fill viewport height */
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  position: relative; /* For background element and scroll hint */
-  overflow: hidden; /* Prevent background element overflow */
-  background-color: var(--alt-bg-color); /* Ensure background color */
+/* --- Buttons --- */
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background-color: var(--accent-color-darker);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.cta-button i {
+  margin-right: 8px;
 }
 
-.hero-title {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(3rem, 10vw, 6rem); /* Large, responsive */
-  line-height: 1;
-  margin-bottom: 0.3em;
-  color: var(--heading-color);
+/* --- Hero Section --- */
+.hero-section {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--alt-bg-color);
 }
-/* Subtle Background Element */
+
 .hero-background-element {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120vmax; /* Very large */
+  width: 120vmax;
   height: 120vmax;
   background: radial-gradient(
     ellipse at center,
     rgba(0, 123, 255, 0.05) 0%,
     rgba(0, 123, 255, 0) 60%
-  ); /* Faint radial gradient using accent color */
+  );
   transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 1;
-  pointer-events: none; /* Make it non-interactive */
-  opacity: 0.7; /* Adjust opacity */
+  pointer-events: none;
+  opacity: 0.7;
 }
-.hero-title .line1,
-.hero-title .line2 {
-  display: block;
-  letter-spacing: -0.02em; /* Slightly tighter */
-}
-.hero-title .line2 {
-  /* Optional: slightly different color or style */
-  color: var(--accent-color); /* Example */
-}
+
 .hero-content-container {
-  /* Specific container for hero content */
-  position: relative; /* To stay above background element */
+  position: relative;
   z-index: 2;
   padding-bottom: 60px; /* Space above scroll hint */
 }
 
 .hero-text {
-  /* Container for text elements */
   margin-bottom: 2rem; /* Space above button */
 }
 
@@ -273,10 +276,9 @@ main {
 }
 
 .hero-name {
-  /* Replaces the old hero-title */
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: clamp(3.5rem, 10vw, 7rem); /* Large, responsive name */
+  font-size: clamp(3.5rem, 10vw, 7rem);
   line-height: 1;
   margin-bottom: 0.1em;
   color: var(--heading-color);
@@ -291,7 +293,7 @@ main {
   margin-bottom: 1em;
 }
 .hero-subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.15rem); /* Adjusted size */
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
   color: var(--text-color);
   max-width: 600px;
   margin: 0 auto 2em; /* More space below subtitle */
@@ -301,7 +303,7 @@ main {
 /* Scroll Down Hint */
 .scroll-down-hint {
   position: absolute;
-  bottom: 30px; /* Position near bottom */
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   color: var(--accent-color);
@@ -331,35 +333,13 @@ main {
   }
 }
 
-/* --- Buttons --- */
-.cta-button {
-  display: inline-block;
-  background-color: var(--accent-color);
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  font-weight: 600; /* Poppins bold */
-  font-family: var(--font-heading);
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  border: none;
-  cursor: pointer;
-}
-.cta-button:hover {
-  background-color: var(--accent-color-darker);
-  color: #fff;
-  transform: translateY(-2px);
-}
-.cta-button i {
-  margin-right: 8px;
-}
-
 /* --- About Section --- */
 .about-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  text-align: center; /* Center text on mobile */
+  text-align: center;
 }
 @media (min-width: 768px) {
   .about-content {
@@ -369,6 +349,7 @@ main {
     gap: 40px;
   }
 }
+/* .profile-photo war nicht im finalen HTML, daher auskommentiert
 .profile-photo {
   width: 150px;
   height: 150px;
@@ -379,17 +360,19 @@ main {
   padding: 3px;
   background-color: var(--bg-color);
 }
+*/
 .about-content p {
-  max-width: 700px;
+  max-width: 700px; /* Gilt dann für den Text-Container */
 }
 
 /* --- Skills Section --- */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: var(--grid-gap); /* Variable verwenden */
 }
 .skill-card {
+  /* .glass-effect wird hier verwendet, daher keine doppelten Styles */
   text-align: center;
 }
 .skill-icon {
@@ -412,8 +395,7 @@ main {
 .timeline {
   position: relative;
   max-width: 750px;
-  margin: 0 auto;
-  margin-top: 1em;
+  margin: 1em auto 0; /* Angepasst für etwas mehr Platz oben */
 }
 /* The vertical line */
 .timeline::after {
@@ -455,30 +437,31 @@ main {
   }
   /* Adjust dot position for left items */
   .timeline-item:nth-child(odd) .timeline-dot {
-    right: -8px;
+    right: -8px; /* Adjusted to be more pixel-perfect with line */
     left: auto;
   }
 }
 
 .timeline-dot {
-  content: "";
+  content: ""; /* Nicht wirklich content, eher als Pseudoelement-Marker */
   position: absolute;
   width: 16px;
   height: 16px;
   background-color: var(--bg-color);
   border: 3px solid var(--accent-color);
   border-radius: 50%;
-  top: 15px;
-  left: 8px; /* Adjust position based on line */
+  top: 15px; /* Vertikale Ausrichtung des Punkts */
+  left: 8px; /* Adjust position based on line for mobile */
   z-index: 1;
 }
 @media (min-width: 768px) {
   .timeline-dot {
-    left: -8px; /* Center on the line */
+    left: -8px; /* Center on the line for desktop */
   }
 }
 
 .timeline-content {
+  /* .glass-effect wird hier verwendet */
   position: relative;
 }
 .timeline-content h3 {
@@ -515,10 +498,11 @@ main {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: var(--grid-gap); /* Variable verwenden */
 }
 
 .project-card {
+  /* .glass-effect wird hier verwendet */
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Ensures image border radius is clipped */
@@ -526,32 +510,42 @@ main {
 
 .project-image {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
+  height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid var(--border-color);
-  margin-bottom: 15px; /* Space between image and text */
+  /* border-bottom: 1px solid var(--border-color); /* War im Original, kann bleiben */
+  margin-bottom: 15px;
 }
 
 .project-info {
-  padding: 0 5px 5px 5px; /* Slight padding inside card, handled by parent */
+  /* padding: 0 5px 5px 5px; /* Original, padding kommt jetzt vom .glass-effect */
   display: flex;
   flex-direction: column;
   flex-grow: 1; /* Allows footer links to stick to bottom */
 }
 
 .project-info h3 {
+  /* Titel innerhalb der Projektkarte */
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
+.project-info h3 a {
+  /* Falls der Titel ein Link ist */
+  color: var(--heading-color); /* Standard-Linkfarbe überschreiben */
+}
+.project-info h3 a:hover {
+  color: var(--accent-color); /* Hover-Farbe für Titel-Link */
+}
+
 .project-info p {
+  /* Beschreibungstext */
   font-size: 0.95rem;
   color: #555;
   margin-bottom: 15px;
   flex-grow: 1; /* Pushes links down */
 }
 .tech-stack {
-  font-size: 0.85rem !important; /* Override p */
+  font-size: 0.85rem !important;
   color: var(--text-color) !important;
   margin-bottom: 15px !important;
   font-style: italic;
@@ -562,12 +556,14 @@ main {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  justify-content: flex-start; /* Standard: linksbündig. Ändere zu flex-end für rechtsbündig */
 }
 
 .project-link {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--accent-color);
+  /* text-decoration: none; /* ist schon global für a gesetzt */
 }
 .project-link i {
   margin-right: 5px;
@@ -656,7 +652,7 @@ main {
   }
 }
 
-/* Projekt-Detailseiten Styles */
+/* --- Projekt-Detailseiten Styles (Beibehalten von Original) --- */
 .project-hero {
   padding: 60px 0;
   text-align: center;
@@ -693,32 +689,24 @@ main {
 }
 
 .project-detail-section h2 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5em;
-  position: relative;
+  /* Wiederverwendung der Haupt-H2-Stile, ggf. spezifische Anpassungen hier */
 }
 
 .project-detail-section h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: var(--accent-color);
-  margin: 0.4em auto 0;
+  /* Wiederverwendung der Haupt-H2::after-Stile */
 }
 
 .project-detail-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: var(--grid-gap); /* Variable verwenden */
   margin-top: 30px;
 }
 
 .feature-card {
+  /* .glass-effect wird hier verwendet */
   text-align: center;
-  padding: 25px;
+  /* padding: 25px; /* Padding kommt vom .glass-effect */
 }
 
 .feature-icon {
@@ -770,10 +758,4 @@ main {
 
 .back-link i {
   margin-right: 8px;
-}
-
-/* Projektspezifische Styles */
-.planet-image {
-  max-width: 150px;
-  margin: 10px auto;
 }
