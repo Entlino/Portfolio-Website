@@ -34,12 +34,13 @@
     <main>
       <section class="project-hero">
         <div class="container">
-          <h1>Onlineshop</h1>
+          <h1>AI-Hub</h1>
           <p class="subtitle">
-            Ein nahezu vollständiger Onlineshop mit Warenkorb-Funktionalität.
+            Eine self hosted Website welche es ermöglicht per API mit Claude zu
+            Chatten.
           </p>
           <div class="project-main-image">
-            <img src="../Onlineshop.png" alt="Onlineshop Screenshot" />
+            <img src="../AI-Hub.png" alt="AI-Hub Screenshot" />
           </div>
         </div>
       </section>
@@ -49,9 +50,13 @@
           <h2>Das Projekt im Detail</h2>
           <div style="max-width: 750px; margin: 0 auto; text-align: center">
             <p>
-              Dieses Projekt habe ich als kleine einarbeitung in React.js,
-              Tailwind CSS und Django verwendet. Ziel dabei war es möglichst
-              viel über die Verwendeten Funktionen zu lernen.
+              Der Fokus in diesem Projekt lag weniger auf dem Frontend sondern
+              mehr auf dem Backend bzw dem hosting welches ich vorgenommen habe.
+            </p>
+            <p>
+              Das Frontend ist eine einfache Website bei welcher man Text
+              eingeben kann, welcher dann über das Backend an Claude gesendet
+              wird und dann die Nachricht von Claude wieder ausgibt.
             </p>
           </div>
         </div>
@@ -63,23 +68,19 @@
           <div style="text-align: center">
             <h3>Frontend</h3>
             <ul class="tech-list">
-              <li><i class="fab fa-react"></i> React</li>
-              <li><i class="fas fa-rocket"></i> Vite</li>
-              <li><i class="fab fa-css3-alt"></i> Tailwind CSS v3</li>
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
             </ul>
             <h3>Backend</h3>
             <ul class="tech-list">
-              <li><i class="fab fa-python"></i> Python 3.13</li>
-              <li><i class="fab fa-django"></i> Django</li>
-              <li><i class="fas fa-code"></i> Django REST Framework (DRF)</li>
-              <li><i class="fas fa-key"></i> JSON Web Tokens (JWT)</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
               <li><i class="fas fa-database"></i> SQLite</li>
-              <li><i class="fas fa-link"></i> CORS</li>
             </ul>
-            <h3>Architektur</h3>
+            <h3>Hosting</h3>
             <ul class="tech-list">
-              <li><i class="fas fa-exchange-alt"></i> RESTful API</li>
-            </ul>
+              <li><i class="fas fa-server"></i> Docker</li>
+              <li><i class="fas fa-server"></i> Home Server</li>
           </div>
         </div>
       </section>
@@ -89,39 +90,31 @@
           <h2>Kernfunktionen</h2>
           <div class="project-detail-grid">
             <div class="feature-card glass-effect">
-              <i class="fas fa-shopping-cart feature-icon"></i>
-              <h4>Warenkorb System</h4>
+              <i class="fas fa-plug feature-icon"></i>
+              <h4>API</h4>
               <p>
-                Vollständig funktionierender Warenkorb mit der Möglichkeit
-                Produkte hinzuzufügen, zu entfernen und die Menge anzupassen.
-                Der Warenkorb bleibt auch nach dem Neuladen der Seite erhalten.
+                Durch die API ist man in der Lage mit Claude zu chatten.
               </p>
             </div>
             <div class="feature-card glass-effect">
-              <i class="fas fa-user-shield feature-icon"></i>
-              <h4>Authentifizierung</h4>
+              <i class="fas fa-code feature-icon"></i>
+              <h4>Darstellung</h4>
               <p>
-                Sicheres Login-System für Administratoren mit JWT
-                Token-basierter Authentifizierung. Geschützte Routen für
-                administrative Funktionen.
+                Die Antworten von Claude werden entsprechend formatiert und ausgegeben, Code sowie Markdown wird erkannt.
               </p>
             </div>
             <div class="feature-card glass-effect">
-              <i class="fas fa-tasks feature-icon"></i>
-              <h4>Produkt Management</h4>
+              <i class="fas fa-server feature-icon"></i>
+              <h4>Hosting</h4>
               <p>
-                Umfassendes CRUD-System für Produkte und Kategorien.
-                Administratoren können Produkte hinzufügen, bearbeiten und
-                entfernen über eine intuitive Oberfläche.
+                Das Projekt wurde auf einem Home Server gehostet, was es ermöglicht, die Website im Heimnetzwerk zu nutzen.
               </p>
             </div>
             <div class="feature-card glass-effect">
-              <i class="fas fa-database feature-icon"></i>
-              <h4>Datenbank Integration</h4>
+              <i class="fas fa-save feature-icon"></i>
+              <h4>Speicherung</h4>
               <p>
-                Robuste SQLite-Datenbank zur Verwaltung von Produkten,
-                Kategorien und Benutzerkonten. RESTful API für nahtlose
-                Frontend-Backend-Kommunikation.
+                Die Website speichert die Chatverläufe lokal
               </p>
             </div>
           </div>
@@ -133,23 +126,13 @@
           <h2>Herausforderungen & Lernen</h2>
           <div style="max-width: 750px; margin: 0 auto">
             <p>
-              Die grösste Herausforderung war die Integration von React mit
-              Django, da ich das ganze aber auch zum erstel Mal gemacht habe
-              hatte ich auch noch kleinere Probleme beim Front sowie Backend.
+              Die Website an sich hat mir keine Schwirigkeiten bereitet, da ich dies bereits des öfteren gemacht habe. Die grösste Herausforderung war das Hosten der Website auf meinem Home Server da ich dies noch nie zuvor gemacht habe.
             </p>
             <p>
-              Da von anfang an klar war, das mein Projekt insgesamt
-              Funktionsfähig sein sollte, bin ich sehr zufrieden mit meiner
-              Arbeit da ich einiges Lernen und probieren konnte um mich mit den
-              Technologien verwandt zu machen.
+              Dazu habe ich gelernt wie man in diesem Falle mit Docker umgehen sollte um das ganze möglichst einfach zu hosten. Da ich mich jedoch gegen ein öffnen der Ports entschieden habe war es noch relativ einfach das ganze zu hosten.
             </p>
             <p>
-              Das Projekt bat mir eine super Möglichkeit um mich mit den
-              Technologien vertraut zu machen und ich habe viel über sie
-              gelernt. Zudem war es nun seit längerem wieder ein Projekt welches
-              ich von anfang an komplett durchgeplant habe und dann auch so
-              umgesetzt habe. Das hat mir sehr viel geholfen um die Übersicht zu
-              behalten.
+              Dennoch war das Projekt und das hosten eine sehr gute Übung und ich konnte einiges lernen.
             </p>
           </div>
         </div>
@@ -160,16 +143,10 @@
           <h2>Code ansehen</h2>
           <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
           <a
-            href="https://github.com/Entlino/E-Commerce-Backend"
+            href="https://github.com/Entlino/AI-Hub"
             target="_blank"
             class="cta-button"
-            ><i class="fab fa-github"></i> GitHub Repository - Backend</a
-          >
-          <a
-            href="https://github.com/Entlino/E-Commerce-Frontend"
-            target="_blank"
-            class="cta-button"
-            ><i class="fab fa-github"></i> GitHub Repository - Frontend</a
+            ><i class="fab fa-github"></i> GitHub Repository</a
           >
         </div>
       </section>

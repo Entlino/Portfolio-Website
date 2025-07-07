@@ -34,12 +34,12 @@
     <main>
       <section class="project-hero">
         <div class="container">
-          <h1>Onlineshop</h1>
+          <h1>Code Snippets</h1>
           <p class="subtitle">
-            Ein nahezu vollständiger Onlineshop mit Warenkorb-Funktionalität.
+            Ein Tool um Code-Snippets zu speichern und zu verwalten.
           </p>
           <div class="project-main-image">
-            <img src="../Onlineshop.png" alt="Onlineshop Screenshot" />
+            <img src="../Code-Snippets.png" alt="Code Snippets Screenshot" />
           </div>
         </div>
       </section>
@@ -49,9 +49,17 @@
           <h2>Das Projekt im Detail</h2>
           <div style="max-width: 750px; margin: 0 auto; text-align: center">
             <p>
-              Dieses Projekt habe ich als kleine einarbeitung in React.js,
-              Tailwind CSS und Django verwendet. Ziel dabei war es möglichst
-              viel über die Verwendeten Funktionen zu lernen.
+              In diesem Projekt habe ich ein System gebaut welches dem Benutzer
+              ermöglicht seine Code Snippets zu speichern und zu verwalten. Das
+              System ist in zwei Teile unterteilt, das Frontend und das Backend.
+              Im Frontend habe ich eine Website über welche die Code Snippets
+              eingegeben werden können.
+            </p>
+            <p>
+              Die Code Snippets werden dann im Backend von einer Lokal laufenden
+              KI analysiert und mit Tags sowie einer Beschreibung versehen.
+              Durch diese Beschreibung oder die Tags kann man im Nachhinein die
+              Snippets über das Suchfeld suchen.
             </p>
           </div>
         </div>
@@ -63,22 +71,15 @@
           <div style="text-align: center">
             <h3>Frontend</h3>
             <ul class="tech-list">
-              <li><i class="fab fa-react"></i> React</li>
-              <li><i class="fas fa-rocket"></i> Vite</li>
-              <li><i class="fab fa-css3-alt"></i> Tailwind CSS v3</li>
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
             </ul>
             <h3>Backend</h3>
             <ul class="tech-list">
-              <li><i class="fab fa-python"></i> Python 3.13</li>
-              <li><i class="fab fa-django"></i> Django</li>
-              <li><i class="fas fa-code"></i> Django REST Framework (DRF)</li>
-              <li><i class="fas fa-key"></i> JSON Web Tokens (JWT)</li>
+              <li><i class="fab fa-python"></i> Python</li>
               <li><i class="fas fa-database"></i> SQLite</li>
-              <li><i class="fas fa-link"></i> CORS</li>
-            </ul>
-            <h3>Architektur</h3>
-            <ul class="tech-list">
-              <li><i class="fas fa-exchange-alt"></i> RESTful API</li>
+              <li><i class="fas fa-code"></i> Flask</li>
             </ul>
           </div>
         </div>
@@ -89,39 +90,40 @@
           <h2>Kernfunktionen</h2>
           <div class="project-detail-grid">
             <div class="feature-card glass-effect">
-              <i class="fas fa-shopping-cart feature-icon"></i>
-              <h4>Warenkorb System</h4>
+              <i class="fas fa-robot feature-icon"></i>
+              <h4>Analyse der Eingabe</h4>
               <p>
-                Vollständig funktionierender Warenkorb mit der Möglichkeit
-                Produkte hinzuzufügen, zu entfernen und die Menge anzupassen.
-                Der Warenkorb bleibt auch nach dem Neuladen der Seite erhalten.
+                Jede eingegebenes Code Snippet wird von einer lokal laufenden KI
+                analysiert. Diese KI fügt Tags und eine Beschreibung hinzu, um
+                die Suche zu erleichtern.
               </p>
             </div>
             <div class="feature-card glass-effect">
               <i class="fas fa-user-shield feature-icon"></i>
-              <h4>Authentifizierung</h4>
+              <h4>Lokales KI Modell</h4>
               <p>
-                Sicheres Login-System für Administratoren mit JWT
-                Token-basierter Authentifizierung. Geschützte Routen für
-                administrative Funktionen.
+                Das System nutzt ein lokal laufendes KI-Modell, um die
+                eingegebenen Code Snippets zu analysieren. Dadurch wird die
+                Privatsphäre der Benutzer gewahrt und die Daten bleiben lokal
+                gespeichert.
               </p>
             </div>
             <div class="feature-card glass-effect">
-              <i class="fas fa-tasks feature-icon"></i>
-              <h4>Produkt Management</h4>
+              <i class="fas fa-search feature-icon"></i>
+              <h4>Suchabfragen</h4>
               <p>
-                Umfassendes CRUD-System für Produkte und Kategorien.
-                Administratoren können Produkte hinzufügen, bearbeiten und
-                entfernen über eine intuitive Oberfläche.
+                Um die gespeicherten Code Snippets schnell zu finden, können
+                Benutzer Suchabfragen durchführen. Die Suche basiert auf den
+                automatisch generierten Tags und Beschreibungen der Snippets.
               </p>
             </div>
             <div class="feature-card glass-effect">
               <i class="fas fa-database feature-icon"></i>
               <h4>Datenbank Integration</h4>
               <p>
-                Robuste SQLite-Datenbank zur Verwaltung von Produkten,
-                Kategorien und Benutzerkonten. RESTful API für nahtlose
-                Frontend-Backend-Kommunikation.
+                Die Code Snippets werden in einer SQLite-Datenbank gespeichert.
+                Dies ermöglicht eine effiziente Speicherung und Abfrage der
+                Snippets.
               </p>
             </div>
           </div>
@@ -133,23 +135,22 @@
           <h2>Herausforderungen & Lernen</h2>
           <div style="max-width: 750px; margin: 0 auto">
             <p>
-              Die grösste Herausforderung war die Integration von React mit
-              Django, da ich das ganze aber auch zum erstel Mal gemacht habe
-              hatte ich auch noch kleinere Probleme beim Front sowie Backend.
+              Am schwersten war es das Lokale KI Modell zu integrieren da ich
+              noch nie damit gearbeitet habe. Jedoch nach einigen Versuchen habe
+              ich es schlussendlich geschafft das Modell einzubinden und es zu
+              verwenden.
             </p>
             <p>
-              Da von anfang an klar war, das mein Projekt insgesamt
-              Funktionsfähig sein sollte, bin ich sehr zufrieden mit meiner
-              Arbeit da ich einiges Lernen und probieren konnte um mich mit den
-              Technologien verwandt zu machen.
+              Zudem war es für mich etwas neues die Ausgabe der KI dannach noch
+              zu verwerten und sturkturieren, da ich dies in der Vergangenheit
+              noch nie gemacht habe. Ich habe jedoch schnell gemerkt, dass es
+              eine sehr nützliche Funktion ist und ich sie in Zukunft auch in
+              anderen Projekten verwenden möchte.
             </p>
             <p>
-              Das Projekt bat mir eine super Möglichkeit um mich mit den
-              Technologien vertraut zu machen und ich habe viel über sie
-              gelernt. Zudem war es nun seit längerem wieder ein Projekt welches
-              ich von anfang an komplett durchgeplant habe und dann auch so
-              umgesetzt habe. Das hat mir sehr viel geholfen um die Übersicht zu
-              behalten.
+              Das Projekt hat mir unfassbar viel Spassgemacht und ich konnte
+              viel im Bezug auf KI lernen. zudem möchte ich in zukunft öfters
+              Projekte in diese Richtung realisieren.
             </p>
           </div>
         </div>
@@ -160,16 +161,10 @@
           <h2>Code ansehen</h2>
           <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
           <a
-            href="https://github.com/Entlino/E-Commerce-Backend"
+            href="https://github.com/Entlino/Code-Snippets"
             target="_blank"
             class="cta-button"
-            ><i class="fab fa-github"></i> GitHub Repository - Backend</a
-          >
-          <a
-            href="https://github.com/Entlino/E-Commerce-Frontend"
-            target="_blank"
-            class="cta-button"
-            ><i class="fab fa-github"></i> GitHub Repository - Frontend</a
+            ><i class="fab fa-github"></i> GitHub Repository</a
           >
         </div>
       </section>

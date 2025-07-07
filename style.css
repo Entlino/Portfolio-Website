@@ -349,23 +349,11 @@ main {
     gap: 40px;
   }
 }
-/* .profile-photo war nicht im finalen HTML, daher auskommentiert
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  border: 3px solid var(--accent-color);
-  padding: 3px;
-  background-color: var(--bg-color);
-}
-*/
+
 .about-content p {
   max-width: 700px; /* Gilt dann für den Text-Container */
 }
 
-/* --- Skills Section --- */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
