@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Aeschlimann</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="../index.html" class="logo">Christian Aeschlimann</a>
+        <nav class="main-nav">
+          <a href="../index.html#about">Über mich</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#experience">Mein Weg</a>
+          <a href="../index.html#projects">Projekte</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <h1>Code Snippets</h1>
+          <p class="subtitle">
+            Ein Tool um Code-Snippets zu speichern und zu verwalten.
+          </p>
+          <div class="project-main-image">
+            <img
+              src="../images/Code-Snippets.png"
+              alt="Code Snippets Screenshot"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Das Projekt im Detail</h2>
+          <div style="max-width: 750px; margin: 0 auto; text-align: center">
+            <p>
+              In diesem Projekt habe ich ein System gebaut welches dem Benutzer
+              ermöglicht seine Code Snippets zu speichern und zu verwalten. Das
+              System ist in zwei Teile unterteilt, das Frontend und das Backend.
+              Im Frontend habe ich eine Website über welche die Code Snippets
+              eingegeben werden können.
+            </p>
+            <p>
+              Die Code Snippets werden dann im Backend von einer Lokal laufenden
+              KI analysiert und mit Tags sowie einer Beschreibung versehen.
+              Durch diese Beschreibung oder die Tags kann man im Nachhinein die
+              Snippets über das Suchfeld suchen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Verwendete Technologien</h2>
+          <div style="text-align: center">
+            <h3>Frontend</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-python"></i> Python</li>
+              <li><i class="fas fa-database"></i> SQLite</li>
+              <li><i class="fas fa-code"></i> Flask</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Kernfunktionen</h2>
+          <div class="project-detail-grid">
+            <div class="feature-card glass-effect">
+              <i class="fas fa-robot feature-icon"></i>
+              <h4>Analyse der Eingabe</h4>
+              <p>
+                Jede eingegebenes Code Snippet wird von einer lokal laufenden KI
+                analysiert. Diese KI fügt Tags und eine Beschreibung hinzu, um
+                die Suche zu erleichtern.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-user-shield feature-icon"></i>
+              <h4>Lokales KI Modell</h4>
+              <p>
+                Das System nutzt ein lokal laufendes KI-Modell, um die
+                eingegebenen Code Snippets zu analysieren. Dadurch wird die
+                Privatsphäre der Benutzer gewahrt und die Daten bleiben lokal
+                gespeichert.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-search feature-icon"></i>
+              <h4>Suchabfragen</h4>
+              <p>
+                Um die gespeicherten Code Snippets schnell zu finden, können
+                Benutzer Suchabfragen durchführen. Die Suche basiert auf den
+                automatisch generierten Tags und Beschreibungen der Snippets.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-database feature-icon"></i>
+              <h4>Datenbank Integration</h4>
+              <p>
+                Die Code Snippets werden in einer SQLite-Datenbank gespeichert.
+                Dies ermöglicht eine effiziente Speicherung und Abfrage der
+                Snippets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Herausforderungen & Lernen</h2>
+          <div style="max-width: 750px; margin: 0 auto">
+            <p>
+              Am schwersten war es das Lokale KI Modell zu integrieren da ich
+              noch nie damit gearbeitet habe. Jedoch nach einigen Versuchen habe
+              ich es schlussendlich geschafft das Modell einzubinden und es zu
+              verwenden.
+            </p>
+            <p>
+              Zudem war es für mich etwas neues die Ausgabe der KI dannach noch
+              zu verwerten und sturkturieren, da ich dies in der Vergangenheit
+              noch nie gemacht habe. Ich habe jedoch schnell gemerkt, dass es
+              eine sehr nützliche Funktion ist und ich sie in Zukunft auch in
+              anderen Projekten verwenden möchte.
+            </p>
+            <p>
+              Das Projekt hat mir unfassbar viel Spassgemacht und ich konnte
+              viel im Bezug auf KI lernen. zudem möchte ich in zukunft öfters
+              Projekte in diese Richtung realisieren.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-links-section">
+        <div class="container">
+          <h2>Code ansehen</h2>
+          <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
+          <a
+            href="https://github.com/Entlino/Code-Snippets"
+            target="_blank"
+            class="cta-button"
+            ><i class="fab fa-github"></i> GitHub Repository</a
+          >
+        </div>
+      </section>
+
+      <section class="back-link-section">
+        <div class="container">
+          <a href="../index.html#projects" class="back-link"
+            ><i class="fas fa-arrow-left"></i> Zurück zur Projektübersicht</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 Christian Aeschlimann. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

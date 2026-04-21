@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt: Spracherkennung - Christian Aeschlimann</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="../index.html" class="logo">Christian Aeschlimann</a>
+        <nav class="main-nav">
+          <a href="../index.html#about">Über mich</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#experience">Mein Weg</a>
+          <a href="../index.html#projects">Projekte</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <h1>Spracherkennung</h1>
+          <p class="subtitle">
+            Ein C#-Programm zur Identifikation der Sprache eines Textes
+            basierend auf Buchstabenkombinationen.
+          </p>
+          <div class="project-main-image">
+            <img
+              src="../images/Spracherkennung.png"
+              alt="Ansicht des Spracherkennungsprogramms"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Das Projekt im Detail</h2>
+          <div style="max-width: 750px; margin: 0 auto; text-align: center">
+            <p>
+              Dieses Programm versucht basierend auf der Häufigkeit von
+              Buchstabenkombinationen die Sprache des eingegebenen Textes zu
+              analysieren.
+            </p>
+            <p>
+              Es gibt einen Training- und einen Testmodus. Im Training-Modus
+              kann man die Häufigkeiten optimieren in dem man einen Text in
+              vorgegebener Sprache eingibt. Im Testmodus hingegeben wird
+              basierend auf den Häufigkeiten die eingegebene Texte analysiert
+              und die wahrscheinlichste Sprache ausgegeben.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Verwendete Technologien</h2>
+          <div style="text-align: center">
+            <ul class="tech-list">
+              <li><i class="fas fa-code"></i> C#</li>
+              <li><i class="fab fa-windows"></i> .NET Framework</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Kernfunktionen</h2>
+          <div class="project-detail-grid">
+            <div class="feature-card glass-effect">
+              <i class="fas fa-file-alt feature-icon"></i>
+              <h4>Textanalyse</h4>
+              <p>
+                Einlesen und Verarbeiten von eingegebenem Text zur Extraktion
+                relevanter Merkmale.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-project-diagram feature-icon"></i>
+              <h4>Frequenzanalyse</h4>
+              <p>
+                Zählen der Häufigkeit von Buchstaben(-kombinationen) im
+                analysierten Text.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-language feature-icon"></i>
+              <h4>Sprachvergleich</h4>
+              <p>
+                Vergleich der ermittelten Frequenzen mit vordefinierten
+                Sprachprofilen.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <h4>Ergebnisausgabe</h4>
+              <p>
+                Anzeige der wahrscheinlichsten Sprache(n) basierend auf der
+                Analyse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Herausforderungen & Lernen</h2>
+          <div style="max-width: 750px; margin: 0 auto">
+            <p>
+              Das schwerste war es das das Programm basierend auf den Zahlen
+              entscheidet ob es jetzt Deutsch oder Englisch ist, also die
+              Auswertung. Zudem gab es bis zu letzt Probleme beim Sprache
+              richtig erkennen.
+            </p>
+            <p>
+              Das Programm sollte jedoch in Zukunft nochmals neu erstellt werden
+              und dann basieren auf einem Machine Learning Modell die Sprache
+              erkennen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-links-section">
+        <div class="container">
+          <h2>Code ansehen</h2>
+          <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
+          <a
+            href="https://github.com/Entlino/Spracherkennung"
+            target="_blank"
+            class="cta-button"
+            ><i class="fab fa-github"></i> GitHub Repository</a
+          >
+        </div>
+      </section>
+
+      <section class="back-link-section">
+        <div class="container">
+          <a href="../index.html#projects" class="back-link"
+            ><i class="fas fa-arrow-left"></i> Zurück zur Projektübersicht</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 Christian Aeschlimann. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

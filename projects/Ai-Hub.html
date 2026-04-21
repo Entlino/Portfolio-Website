@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Aeschlimann</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="../index.html" class="logo">Christian Aeschlimann</a>
+        <nav class="main-nav">
+          <a href="../index.html#about">Über mich</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="../index.html#experience">Mein Weg</a>
+          <a href="../index.html#projects">Projekte</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <h1>AI-Hub</h1>
+          <p class="subtitle">
+            Eine self hosted Website welche es ermöglicht per API mit Claude zu
+            Chatten.
+          </p>
+          <div class="project-main-image">
+            <img src="../images/AI-Hub.png" alt="AI-Hub Screenshot" />
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Das Projekt im Detail</h2>
+          <div style="max-width: 750px; margin: 0 auto; text-align: center">
+            <p>
+              Der Fokus in diesem Projekt lag weniger auf dem Frontend sondern
+              mehr auf dem Backend bzw dem hosting welches ich vorgenommen habe.
+            </p>
+            <p>
+              Das Frontend ist eine einfache Website bei welcher man Text
+              eingeben kann, welcher dann über das Backend an Claude gesendet
+              wird und dann die Nachricht von Claude wieder ausgibt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Verwendete Technologien</h2>
+          <div style="text-align: center">
+            <h3>Frontend</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-js"></i> JavaScript</li>
+            </ul>
+            <h3>Backend</h3>
+            <ul class="tech-list">
+              <li><i class="fab fa-js"></i> JavaScript</li>
+              <li><i class="fas fa-database"></i> SQLite</li>
+            </ul>
+            <h3>Hosting</h3>
+            <ul class="tech-list">
+              <li><i class="fas fa-server"></i> Docker</li>
+              <li><i class="fas fa-server"></i> Home Server</li>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section">
+        <div class="container">
+          <h2>Kernfunktionen</h2>
+          <div class="project-detail-grid">
+            <div class="feature-card glass-effect">
+              <i class="fas fa-plug feature-icon"></i>
+              <h4>API</h4>
+              <p>
+                Durch die API ist man in der Lage mit Claude zu chatten.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-code feature-icon"></i>
+              <h4>Darstellung</h4>
+              <p>
+                Die Antworten von Claude werden entsprechend formatiert und ausgegeben, Code sowie Markdown wird erkannt.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-server feature-icon"></i>
+              <h4>Hosting</h4>
+              <p>
+                Das Projekt wurde auf einem Home Server gehostet, was es ermöglicht, die Website im Heimnetzwerk zu nutzen.
+              </p>
+            </div>
+            <div class="feature-card glass-effect">
+              <i class="fas fa-save feature-icon"></i>
+              <h4>Speicherung</h4>
+              <p>
+                Die Website speichert die Chatverläufe lokal
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-detail-section alt-bg">
+        <div class="container">
+          <h2>Herausforderungen & Lernen</h2>
+          <div style="max-width: 750px; margin: 0 auto">
+            <p>
+              Die Website an sich hat mir keine Schwirigkeiten bereitet, da ich dies bereits des öfteren gemacht habe. Die grösste Herausforderung war das Hosten der Website auf meinem Home Server da ich dies noch nie zuvor gemacht habe.
+            </p>
+            <p>
+              Dazu habe ich gelernt wie man in diesem Falle mit Docker umgehen sollte um das ganze möglichst einfach zu hosten. Da ich mich jedoch gegen ein öffnen der Ports entschieden habe war es noch relativ einfach das ganze zu hosten.
+            </p>
+            <p>
+              Dennoch war das Projekt und das hosten eine sehr gute Übung und ich konnte einiges lernen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-links-section">
+        <div class="container">
+          <h2>Code ansehen</h2>
+          <p>Der Quellcode für dieses Projekt ist auf GitHub verfügbar.</p>
+          <a
+            href="https://github.com/Entlino/AI-Hub"
+            target="_blank"
+            class="cta-button"
+            ><i class="fab fa-github"></i> GitHub Repository</a
+          >
+        </div>
+      </section>
+
+      <section class="back-link-section">
+        <div class="container">
+          <a href="../index.html#projects" class="back-link"
+            ><i class="fas fa-arrow-left"></i> Zurück zur Projektübersicht</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 Christian Aeschlimann. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
